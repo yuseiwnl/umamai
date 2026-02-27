@@ -1,7 +1,6 @@
-# UmamAI リポジトリアーキテクチャ
+# UmamAI リポジトリ
 
 料理写真をスワイプで探索し、投稿・いいね・プロフィール管理ができるフルスタック Web アプリです。  
-この README は「どの層が何を担当しているか」を短時間で把握できるように整理しています。
 
 ## 1. 全体構成
 
@@ -37,7 +36,7 @@
 - 地図/店舗検索: Google Maps Places API (`@vis.gl/react-google-maps`)
 - 実行基盤: Docker / Docker Compose
 
-## 3. レイヤ責務
+## 3. レイヤー責務
 
 ### Frontend (`/frontend`)
 - 画面ルーティングと描画（`src/app`）
@@ -73,7 +72,7 @@
 2. `src/middleware.ts` が `/liked`, `/profile`, `/upload` への未認証アクセスをガード
 3. 認証済みユーザーのみいいね・投稿・プロフィール閲覧が可能
 
-## 5. ディレクトリ構成（要点）
+## 5. ディレクトリ構成
 
 ```text
 .
@@ -112,7 +111,7 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 ```
 
-## 7. 環境変数（主要）
+## 7. 環境変数
 
 ### Frontend
 - `NEXT_PUBLIC_API_BASE` (FastAPI のベース URL)
