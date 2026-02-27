@@ -1,0 +1,16 @@
+openai
+requests
+pillow
+pytesseract
+python-dotenv
+faiss-cpu  # for local vector search testing
+# Optional if using Pinecone
+pinecone-client
+supabase
+torch
+torchvision
+transformers
+fastapi
+uvicorn
+pydantic
+

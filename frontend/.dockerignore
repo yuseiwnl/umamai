@@ -1,0 +1,29 @@
+# Node dependencies
+node_modules
+npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+
+# Next.js build output
+.next
+out
+
+# Env files (never bake secrets into Docker image)
+.env
+.env.* 
+
+# Logs
+*.log
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Git
+.git
+.gitignore
+
+# Misc
+*.swp
